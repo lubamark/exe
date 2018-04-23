@@ -1,0 +1,25 @@
+{
+  "name": "Exe",
+  "description": "Start project on Bootstrap 4 - itchief.ru",
+  "main": "index.html",
+  "authors": [
+    "lubamark"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "bootstrap",
+    "scss",
+    "gulp"
+  ],
+  "homepage": "https://github.com/lubamark/exe",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-beta"
+  }
+}
