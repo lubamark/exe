@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 16 20" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><polygon points="10,8 4,2 4,5 0,5 0,11 4,11 4,14  "/><path d="M13.5,0H9C8.448,0,8,0.448,8,1s0.448,1,1,1h4.5C13.771,2,14,2.229,14,2.5v11c0,0.271-0.229,0.5-0.5,0.5H9   c-0.552,0-1,0.447-1,1s0.448,1,1,1h4.5c1.379,0,2.5-1.121,2.5-2.5v-11C16,1.122,14.879,0,13.5,0z"/></g><text x="0" y="31" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Rflor</text><text x="0" y="36" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1190.55px" height="1190.55px" viewBox="0 97.797 1190.55 1190.55" enable-background="new 0 97.797 1190.55 1190.55"
+	 xml:space="preserve">
+<g>
+	<polygon points="744.093,693.072 297.638,246.615 297.638,469.844 0,469.844 0,916.3 297.638,916.3 297.638,1139.528 	"/>
+	<path d="M1004.527,97.797H669.685c-41.074,0-74.411,33.335-74.411,74.409s33.336,74.409,74.411,74.409h334.842
+		c20.164,0,37.205,17.04,37.205,37.205v818.503c0,20.165-17.041,37.205-37.205,37.205H669.685
+		c-41.074,0-74.411,33.261-74.411,74.409s33.336,74.409,74.411,74.409h334.842c102.609,0,186.023-83.413,186.023-186.023V283.82
+		C1190.55,181.284,1107.136,97.797,1004.527,97.797z"/>
+</g>
+</svg>
