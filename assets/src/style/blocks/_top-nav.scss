@@ -1,0 +1,39 @@
+  .navbar-dark .navbar-nav {
+    .nav-link {
+      font-size: 13px;
+      line-height: 20px;
+      color: #898989;
+
+      &__register {
+        padding-left: 0;
+      }
+
+      &__sigh {
+        padding-right: .3rem;
+      }
+
+      &:hover,
+      &:focus {
+        color: $green;
+      }
+    }
+
+    .dropdown-item {
+      font-size: 13px;
+    }
+  }
+
+.top-nav {
+
+  .nav {
+    &-link {
+      display: inline-block;
+    }
+
+
+
+    &-item {
+      color: #898989;
+    }
+  }
+}

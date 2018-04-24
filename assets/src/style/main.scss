@@ -23,4 +23,6 @@
 @import "../bower_components/bootstrap/scss/utilities";
 
 // Подключение своих SCSS файлов
+@import "fonts";
 @import "my";
+@import "blocks/top-nav";
