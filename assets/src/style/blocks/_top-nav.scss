@@ -1,8 +1,10 @@
   .navbar-dark .navbar-nav {
     .nav-link {
       font-size: 13px;
-      line-height: 20px;
+      line-height: 16px;
       color: #898989;
+      padding-top: 0.4rem;
+      padding-bottom: 0.8rem;
 
       &__register {
         padding-left: 0;
@@ -24,16 +26,23 @@
   }
 
 .top-nav {
+  padding-top: 0.4rem;
+  padding-bottom: 0.2rem;
 
   .nav {
     &-link {
       display: inline-block;
+      vertical-align: middle;
+
     }
-
-
-
     &-item {
       color: #898989;
+      margin-right: 50px;
+      white-space: nowrap;
+
+      &:last-child{
+        margin-right: 0;
+      }
     }
   }
 }
