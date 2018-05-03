@@ -9,65 +9,185 @@
 </head>
 <body>
   <header class="header">
-    <nav class="top-nav navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-              <span class="icon icon--world"></span><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                English
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Again english</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <span class="icon icon--phone"></span><a class="nav-link" href="#">+440 875369208</a>
-            </li>
-            <li class="nav-item">
-              <span class="icon icon--plane"></span><a class="nav-link" href="#">info@sitename.com</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <span class="icon icon--enter"></span>
-              <a class="nav-link nav-link__sigh" href="#">Sign In</a>/
-              <a class="nav-link nav-link__register" href="#">Register</a>
-            </li>
-            <li class="nav-item dropdown">
-              <span class="icon icon--heart"></span><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Wishlist: 0 items
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Add some</a>
-                <a class="dropdown-item" href="#">Cry a lot</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <ul class="social-links">
-                <li class="social-item">
-                  <a href="#" class="social-link social-link--facebook"><span class="sr-only">facebook</span></a>
-                </li>
-                <li class="social-item">
-                  <a href="#" class="social-link social-link--tweeter"><span class="sr-only">tweeter</span></a>
-                </li>
-                <li class="social-item">
-                  <a href="#" class="social-link social-link--tumblr"><span class="sr-only">tumblr</span></a>
-                </li>
-                <li class="social-item">
-                  <a href="" class="social-link social-link--linkedin"><span class="sr-only">linked in</span></a>
-                </li>
-                <li class="social-item">
-                  <a href="" class="social-link social-link--googleplus"><span class="sr-only">google plus</span></a>
-                </li>
-                <li class="social-item">
-                  <a href="" class="social-link social-link--rss"><span class="sr-only">rss</span></a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+    <nav class="main-nav">
+      <!--top nav-->
+      <div class="top-nav navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <span class="icon icon--world"></span><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_lang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  English
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown_lang">
+                  <a class="dropdown-item" href="#">Again english</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <span class="icon icon--phone"></span><a class="nav-link" href="#">+440 875369208</a>
+              </li>
+              <li class="nav-item">
+                <span class="icon icon--plane"></span><a class="nav-link" href="#">info@sitename.com</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <span class="icon icon--enter"></span>
+                <a class="nav-link nav-link__sigh" href="#">Sign In</a>/
+                <a class="nav-link nav-link__register" href="#">Register</a>
+              </li>
+              <li class="nav-item dropdown">
+                <span class="icon icon--heart"></span><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_wish" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Wishlist: 0 items
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown_wish">
+                  <a class="dropdown-item" href="#">Add some</a>
+                  <a class="dropdown-item" href="#">Cry a lot</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <ul class="social-links">
+                  <li class="social-item">
+                    <a href="#" class="social-link social-link--facebook"><span class="sr-only">facebook</span></a>
+                  </li>
+                  <li class="social-item">
+                    <a href="#" class="social-link social-link--tweeter"><span class="sr-only">tweeter</span></a>
+                  </li>
+                  <li class="social-item">
+                    <a href="#" class="social-link social-link--tumblr"><span class="sr-only">tumblr</span></a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link social-link--linkedin"><span class="sr-only">linked in</span></a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link social-link--googleplus"><span class="sr-only">google plus</span></a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link social-link--rss"><span class="sr-only">rss</span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+        </div>
       </div>
+      <!--end of top nav -->
+      <!--middle nav -->
+      <div class="middle-nav navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">èxe</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_home" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home <span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown_home">
+                  <a class="dropdown-item" href="#">Go home</a>
+                  <a class="dropdown-item" href="#">Ho-ho-home</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_pages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown_pages">
+                  <a class="dropdown-item" href="#">Page 1</a>
+                  <a class="dropdown-item" href="#">Page 2</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Last page</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_features" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Features
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown_features">
+                  <a class="dropdown-item" href="#">Feature 1</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Search</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+      <!--end of middle-nav -->
     </nav>
   </header>
+  <!--main-->
+  <main class="main-home">
+
+    <!--slider-->
+    <section class="slider">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="carousel-caption d-md-block">
+        <h3>Clean & Unique<br>
+        <small>Everything You Need is Here</small></h3>
+        <p class="d-sm-none">Cat ipsum dolor sit amet, lick left leg for ninety minutes, still dirty, or poop on grasses trip on catnip for lick the plastic bag.</p>
+        <button type="button" class="btn btn-dark">Buy This Now</button>
+        <button type="button" class="btn btn-outline-light">Screenshots</button>
+      </div>
+      <img class="d-block w-100" src="img/slides/slide1.jpg" alt="First slide">
+
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-caption d-md-block">
+        <h3>Now you can see<br>
+        <small>That it's same picture but mixed</small></h3>
+        <p class="d-sm-none">Cat not kitten around always ensure to lay down in such a manner that tail can lightly brush human's nose chew on cable meow to be let out yet eat grass, throw it back up and fall asleep on the washing machine.</p>
+        <button type="button" class="btn btn-dark">Buy This Now</button>
+        <button type="button" class="btn btn-outline-light">Screenshots</button>
+      </div>
+      <img class="d-block w-100" src="img/slides/slide2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-caption d-md-block">
+        <h3>Becouse carousel is works<br>
+        <small>But I'm still lazy</small></h3>
+        <p>Hiss and stare at nothing then run suddenly away go into a room to decide you didn't want to be in there anyway throwup on your pillow fish i must find my red catnip fishy fish plays league of legends. </p>
+        <button type="button" class="btn btn-dark">Buy This Now</button>
+        <button type="button" class="btn btn-outline-light">Screenshots</button>
+      </div>
+      <img class="d-block w-100" src="img/slides/slide3.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    </section>
+    <!-- end of slider -->
+  </main>
   <h1>Clean & Unique</h1>
   <div class="logo">Exe, bitch!</div>
   <p>New super project for me and me</p>
