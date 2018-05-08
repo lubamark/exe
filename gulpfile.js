@@ -59,6 +59,10 @@ var gulp = require('gulp'),  // подключаем Gulp
     jpegrecompress = require('imagemin-jpeg-recompress'), // плагин для сжатия jpeg
     pngquant = require('imagemin-pngquant'), // плагин для сжатия png
     del = require('del'); // плагин для удаления файлов и каталогов
+    var svgstore = require("gulp-svgstore");
+    var svgmin = require('gulp-svgmin');
+    var rename = require("gulp-rename");
+
 
 /* задачи */
 
@@ -135,10 +139,20 @@ gulp.task('cache:clear', function () {
   cache.clearAll();
 });
 
+gulp.task("sprite", function () {
+  return gulp.src(path.src.img + "icons/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest(path.src.img + "icons/"));
+});
+
 // сборка
 gulp.task('build', [
     'clean:build',
     'html:build',
+    'sprite',
     'css:build',
     'js:build',
     'fonts:build',
