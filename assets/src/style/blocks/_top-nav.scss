@@ -8,21 +8,26 @@
 
       &__register {
         padding-left: 0;
+        color: $green;
       }
 
       &__sigh {
         padding-right: .3rem;
+
       }
 
       &:hover,
       &:focus {
-        color: $green;
+        color: $red;
+      }
+
+      &:active {
+        opacity: 0.8;
+
       }
     }
 
-    .dropdown-item {
-      font-size: 13px;
-    }
+
   }
 
 .top-nav {
@@ -45,4 +50,48 @@
       }
     }
   }
+}
+
+
+.middle-nav {
+  padding: 25px;
+
+  .navbar-brand {
+    font-family: Axis, Arial, sans-serif;
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  .nav-link {
+    font-family: RaleWay, Arial, sans-serif;
+    font-weight: 800;
+    color: #555;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+  }
+
+   .navbar-nav .nav-link {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+}
+
+.dropdown-item {
+  font-size: 13px;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $red;
+  }
+
+  &:active {
+    background-color: rgba($red, 0.8);
+  }
+}
+
+.dropdown-menu {
+  padding: 0.2rem 0;
 }
