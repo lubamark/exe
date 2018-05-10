@@ -1,0 +1,12 @@
+.icons {
+  height: 16px;
+  width: 16px;
+  fill: currentColor;
+  margin-right: 3px;
+  position: relative;
+  top: 3px;
+
+  @media screen and (max-width:992px){
+    margin-right: 8px;
+  }
+}

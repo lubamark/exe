@@ -18,3 +18,5 @@
 //= ../bower_components/bootstrap/js/dist/popover.js
 
 // Импортируем другие js-файлы
+
+//= svgxuse.min.js

@@ -61,7 +61,9 @@ var gulp = require('gulp'),  // подключаем Gulp
     del = require('del'); // плагин для удаления файлов и каталогов
     var svgstore = require("gulp-svgstore");
     var svgmin = require('gulp-svgmin');
+    var cheerio = require('gulp-cheerio');
     var rename = require("gulp-rename");
+    var replace = require('gulp-replace');
 
 
 /* задачи */
@@ -129,6 +131,27 @@ gulp.task('image:build', function () {
         .pipe(gulp.dest(path.build.img)); // выгрузка готовых файлов
 });
 
+//создание  спрайта иконок
+gulp.task("sprite", function () {
+  return gulp.src("assets/src/img/icons/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    // remove all fill, style and stroke declarations in out shapes
+		.pipe(cheerio({
+			run: function ($) {
+				$('[fill]').removeAttr('fill');
+				$('[stroke]').removeAttr('stroke');
+				$('[style]').removeAttr('style');
+			},
+			parserOptions: {xmlMode: true}
+		}))
+		// cheerio plugin create unnecessary string '&gt;', so replace it.
+		.pipe(replace('&gt;', '>'))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("assets/build/img"));
+});
+
 // удаление каталога build
 gulp.task('clean:build', function () {
     del.sync(path.clean);
@@ -139,24 +162,17 @@ gulp.task('cache:clear', function () {
   cache.clearAll();
 });
 
-gulp.task("sprite", function () {
-  return gulp.src(path.src.img + "icons/*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest(path.src.img + "icons/"));
-});
 
 // сборка
 gulp.task('build', [
     'clean:build',
     'html:build',
-    'sprite',
     'css:build',
     'js:build',
     'fonts:build',
-    'image:build'
+    'image:build',
+    'sprite'
+
 ]);
 
 // запуск задач при изменении файлов

@@ -1,10 +1,10 @@
   .navbar-dark .navbar-nav {
     .nav-link {
       font-size: 13px;
-      line-height: 16px;
+      line-height: 26px;
       color: #898989;
-      padding-top: 0.4rem;
-      padding-bottom: 0.8rem;
+      padding-top: .2rem;
+      padding-bottom: .3rem;
 
       &__register {
         padding-left: 0;
@@ -94,4 +94,19 @@
 
 .dropdown-menu {
   padding: 0.2rem 0;
+  min-width: 0.8rem;
+}
+
+
+.right-top-menu {
+  margin-left: auto;
+
+  @media screen and (max-width:576px){
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+.left-top-menu {
+  margin-right: auto;
 }

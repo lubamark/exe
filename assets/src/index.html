@@ -8,14 +8,20 @@
   <title>Exe</title>
 </head>
 <body>
+  <div class="hidden">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="header">
     <nav class="main-nav">
       <!--top nav-->
       <div class="top-nav navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav left-top-menu">
               <li class="nav-item dropdown">
-                <span class="icon icon--world"></span><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_lang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_lang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <svg class="icons icon_world" width="16" height="16" role="img">
+                    <use xlink:href="img/sprite.svg#icon_world"></use>
+                  </svg>
                   English
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown_lang">
@@ -23,20 +29,34 @@
                 </div>
               </li>
               <li class="nav-item">
-                <span class="icon icon--phone"></span><a class="nav-link" href="#">+440 875369208</a>
+                <a class="nav-link" href="#">
+                  <svg class="icons icon_world" width="16" height="16" role="img">
+                    <use xlink:href="img/sprite.svg#icon_phone"></use>
+                  </svg>
+                  +440 875369208</a>
               </li>
               <li class="nav-item">
-                <span class="icon icon--plane"></span><a class="nav-link" href="#">info@sitename.com</a>
+                <a class="nav-link" href="#">
+                  <svg class="icons icon_world" width="16" height="16" role="img">
+                    <use xlink:href="img/sprite.svg#icon_plane"></use>
+                  </svg>
+                  info@sitename.com</a>
               </li>
             </ul>
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav right-top-menu">
               <li class="nav-item">
-                <span class="icon icon--enter"></span>
-                <a class="nav-link nav-link__sign" href="#">Sign In</a>/
+                <a class="nav-link nav-link__sign" href="#">
+                  <svg class="icons icon_world" width="16" height="16" role="img">
+                    <use xlink:href="img/sprite.svg#icon_enter"></use>
+                  </svg>
+                  Sign In </a> |
                 <a class="nav-link nav-link__register" href="#">Register</a>
               </li>
               <li class="nav-item dropdown">
-                <span class="icon icon--heart"></span><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_wish" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_wish" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <svg class="icons icon_world" width="16" height="16" role="img">
+                    <use xlink:href="img/sprite.svg#icon_heart"></use>
+                  </svg>
                   Wishlist: 0 items
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown_wish">
@@ -192,5 +212,6 @@
   <div class="logo">Exe, bitch!</div>
   <p>New super project for me and me</p>
 <script src="js/main.js"></script>
+<script src="js/svgxuse.min.js"></script>
 </body>
 </html>
