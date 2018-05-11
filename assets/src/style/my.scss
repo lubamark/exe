@@ -12,3 +12,20 @@ body {
   line-height: 1.25rem;
   min-width: 320px;
 }
+
+button:focus{
+  outline: none;
+}
+
+a[href=""] {
+  color: $black;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
