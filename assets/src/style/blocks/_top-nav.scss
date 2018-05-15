@@ -39,7 +39,7 @@ padding-bottom: 0.2rem;
 
     &-item {
       color: $light-grey;
-      margin-right: 50px;
+      margin-right: 1.5rem;
       white-space: nowrap;
 
       &:last-child {
@@ -56,10 +56,10 @@ padding-bottom: 0.2rem;
 .right-top-menu {
 margin-left: auto;
 
-@media screen and (max-width:576px){
-  margin-right: auto;
-  margin-left: 0;
-}
+  @media screen and (max-width:576px){
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
 
 .left-top-menu {
@@ -94,12 +94,12 @@ padding: 15px;
   padding: 0.5rem 0.7rem;
 
   @media screen and (max-width: 1200px) {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
     padding: 0.3rem 0.5rem;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 992px) {
     font-size: 18px;
     line-height: 24px;
     padding: 0.3rem 0.5rem;
@@ -109,6 +109,7 @@ padding: 15px;
     display: inline-block;
     font-weight: 500;
     text-transform: none;
+    padding-bottom: 0.8rem;
 
     &::after {
       content: "2";
