@@ -1,0 +1,46 @@
+.features-tabs {
+  margin-bottom: 20px;
+
+  .features-tabs-top {
+    position: relative;
+
+    min-height: 200px;
+
+    font-family: $raleway;
+    text-align: center;
+
+    background-color: $black;
+    color: rgba($white, 0.7);
+    padding: 2rem 0 3rem 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: calc(50% - 20px);
+      margin: 0 auto;
+
+      width: 40px;
+      height: 40px;
+      border-width: 20px;
+      border-style: solid;
+      border-color: transparent;
+      border-bottom-color: $white;
+
+    }
+
+    .tab-title {
+      max-width: 900px;
+      font-size: 32px;
+      line-height: 40px;
+      margin: 0 auto 1rem auto;
+    }
+
+    .tab-subtitle {
+      max-width: 850px;
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0 auto;
+    }
+  }
+}
