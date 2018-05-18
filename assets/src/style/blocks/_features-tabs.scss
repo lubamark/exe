@@ -1,5 +1,6 @@
 .features-tabs {
   margin-bottom: 20px;
+  background-color: $bg-light;
 
   .features-tabs-top {
     position: relative;
@@ -25,7 +26,7 @@
       border-width: 20px;
       border-style: solid;
       border-color: transparent;
-      border-bottom-color: $white;
+      border-bottom-color: $bg-light;
 
     }
 
@@ -43,4 +44,50 @@
       margin: 0 auto;
     }
   }
+
+  .features-tabs-bottom {
+    margin-top: 115px;
+
+    .feature-tabs-badge {
+      position: relative;
+      top: -35px;
+
+      width: 70px;
+      height: 70px;
+      margin: 0 auto;
+
+      background-color: $black;
+      border-radius: 50%;
+
+      .feature-tabs-icon {
+        position: absolute;
+        fill: $bg-light;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        margin: auto;
+      }
+    }
+  }
+
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+    color: $black;
+    background-color: transparent;
+    border: none;
+  }
+
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    .card-title {
+      color: $red;
+    }
+
+    .feature-tabs-badge {
+      background-color: $red;
+    }
+  }
+
+
+
 }
