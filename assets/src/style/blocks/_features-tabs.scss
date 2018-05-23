@@ -1,6 +1,11 @@
 .features-tabs {
   margin-bottom: 20px;
-  background-color: $bg-light;
+
+  @media screen and (max-width:575px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
 
   .features-tabs-top {
     position: relative;
@@ -27,7 +32,23 @@
       border-style: solid;
       border-color: transparent;
       border-bottom-color: $bg-light;
+    }
 
+    @media screen and (max-width:1000px) {
+      min-height: 170px;
+      padding: 1.5rem 0 2.5rem 0;
+    }
+
+    @media screen and (max-width:575px) {
+      padding: 2rem 0 1rem 0;
+
+      &::after {
+        top: -1px;
+        border-top-color: $bg-light;
+        border-bottom-color: transparent;
+
+
+      }
     }
 
     .tab-title {
@@ -35,6 +56,17 @@
       font-size: 32px;
       line-height: 40px;
       margin: 0 auto 1rem auto;
+
+      @media screen and (max-width:1000px) {
+        font-size: 26px;
+        line-height: 32px;
+      }
+
+      @media screen and (max-width:575px) {
+        font-size: 20px;
+        line-height: 26px;
+        padding: 0 20px;
+        }
     }
 
     .tab-subtitle {
@@ -42,11 +74,34 @@
       font-size: 20px;
       line-height: 30px;
       margin: 0 auto;
+
+      @media screen and (max-width:1000px) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      @media screen and (max-width:575px) {
+        padding: 0 20px;
+        font-size: 14px;
+        line-height: 20px;
+        }
     }
   }
 
   .features-tabs-bottom {
-    margin-top: 115px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: $bg-light;
+
+    @media screen and (max-width:1000px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    @media screen and (max-width:575px) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      }
 
     .feature-tabs-badge {
       position: relative;
@@ -54,20 +109,127 @@
 
       width: 70px;
       height: 70px;
-      margin: 0 auto;
+      margin: 0 auto -40px auto;
 
       background-color: $black;
       border-radius: 50%;
 
       .feature-tabs-icon {
         position: absolute;
-        fill: $bg-light;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
 
+        fill: $bg-light;
+        width: 30px;
+        height: 30px;
         margin: auto;
+      }
+
+      @media screen and (max-width:1200px) {
+        top: -25px;
+        width: 50px;
+        height: 50px;
+
+        .feature-tabs-icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+    }
+
+    .nav-tabs {
+      border: none;
+    }
+
+    .card {
+      min-height: 245px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+
+        bottom: 30px;
+        left: calc(50% - 35px);
+
+        height: 3px;
+        width: 70px;
+        background-color: $black;
+      }
+
+      @media screen and (max-width:1200px) {
+        min-height: 200px;
+      }
+
+      @media screen and (max-width:1000px) {
+        min-height: 240px;
+      }
+
+      @media screen and (max-width:1000px) {
+        min-height: 180px;
+      }
+
+      @media screen and (max-width:575px){
+        min-height: 60px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &::after {
+          display: none;
+        }
+
+        .feature-tabs-badge {
+          flex-shrink: 0;
+          top: -20px;
+          left: 30px;
+        }
+
+      }
+
+      .card-body {
+        text-align: center;
+        padding: 1.9rem;
+
+        @media screen and (max-width:1200px) {
+          padding: 1.25rem;
+        }
+
+        @media screen and (max-width:575px){
+          margin-left: -50px;
+        }
+      }
+
+      .card-title {
+        font-family: $raleway;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 20px;
+        margin-bottom: 1rem;
+
+        @media screen and (max-width:1200px){
+          font-size: 16px;
+          margin-bottom: 0.4rem;
+        }
+      }
+
+      .card-text {
+        font-size: 14px;
+        color: $dark-grey;
+        margin-bottom: 1rem;
+
+        @media screen and (max-width:1200px){
+          font-size: 12px;
+          margin-bottom: 2rem;
+        }
+
+        @media screen and (max-width:575px){
+          display: none;
+        }
       }
     }
   }
@@ -78,7 +240,12 @@
     border: none;
   }
 
-  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-link:hover {
+    .card::after {
+      background-color: $red;
+    }
     .card-title {
       color: $red;
     }
@@ -87,7 +254,4 @@
       background-color: $red;
     }
   }
-
-
-
 }
